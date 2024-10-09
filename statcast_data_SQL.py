@@ -3,7 +3,7 @@ import sqlite3
 from scipy.stats import linregress
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('C:\\Users\\17323\\Desktop\\statcast.csv', encoding='ISO-8859-1', engine='c', on_bad_lines='skip')
+df = pd.read_csv('statcast.csv', encoding='ISO-8859-1', engine='c', on_bad_lines='skip')
 
 # Connect to the SQLite database (or create it if it doesn't exist)
 conn = sqlite3.connect('statcast.db')
